@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100vw;
+  background-color: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
+
+/* FIXED — auto height */
+.watch-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* FIXED — auto height, no forced 100vh */
+.watch-img-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* FIXED — no absolute, auto height */
+.watch-img {
+  width: 100%;
+}
+.watch-img2 {
+  display: none;
+}
+.watch-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hide second image on mobile */
+
+/* FIXED — removed absolute so height adjusts */
+.watch-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin-top: 17%;
+  position: absolute;
+}
+
+.watch-content h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.watch-content p {
+  font-size: 0.8rem;
+  width: 300px;
+}
+
+.watch-content h4 {
+  width: 200px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+}
+
+/* Logos section */
+.watch-logo-cont {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  gap: 1.5rem;
+}
+
+.watch-c {
+  display: flex;
+  height: 65px;
+  gap: 1.5rem;
+  background-color: #121212;
+}
+
+.watch-logo {
+  width: 100px;
+  height: 65px;
+}
+
+.watch-logo img {
+  height: 65px;
+  width: auto;
+}
+@media screen and (max-width: 1000px) {
+  .watch-logo-cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    gap: 0rem;
+  }
+
+  .watch-c {
+    display: flex;
+    height: 50px;
+    background-color: #121212;
+    gap: 0.5rem;
+  }
+
+  .watch-logo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .watch-logo img {
+    height: 50px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .watch-c {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+  }
+}
+@media screen and (max-width: 700px) {
+  .watch-img {
+    width: 100%;
+    display: none;
+  }
+  .watch-img2 {
+    display: flex;
+    width: 100%;
+  }
+  .watch-img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .watch-img img {
+    display: none;
+  }
+  .watch-img-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: end;
+  }
+  .watch-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    text-align: center;
+    position: absolute;
+    margin-top: 0%;
+    bottom: 5%;
+  }
+
+  .watch-content h3 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+  .watch-content p {
+    width: 300px;
+    min-width: 80%;
+    max-width: 80%;
+    font-size: 0.7rem;
+    width: 300px;
+  }
+
+  .watch-content h4 {
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    width: auto;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}

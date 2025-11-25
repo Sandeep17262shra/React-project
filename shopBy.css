@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  max-width: 100vw;
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
+
+.shop-by-container {
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.shop-by-container h2 {
+  color: #3e3e3e;
+  font-size: 2rem;
+  font-weight: lighter;
+  background-color: #ffffff;
+}
+.by-card {
+  width: 270px;
+  max-width: 270px;
+  min-width: 270px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  position: relative;
+}
+.by-card-img {
+  width: 270px;
+  max-width: 270px;
+  min-width: 270px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+.by-card-img img {
+  width: 270px;
+  max-width: 270px;
+  min-width: 270px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+}
+.by-card h3 {
+  width: 270px;
+  max-width: 270px;
+  min-width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+  .shop-by-container {
+    max-width: 100vw;
+    height: 80vh;
+    max-height: 80vh;
+    min-height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .shop-by-container h2 {
+    color: #3e3e3e;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: #ffffff;
+  }
+  .by-card {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+    height: 270px;
+    max-height: 270px;
+    min-height: 270px;
+    position: relative;
+  }
+  .by-card-img {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+    height: 270px;
+    max-height: 270px;
+    min-height: 270px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .by-card-img img {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+    height: 270px;
+    max-height: 270px;
+    min-height: 270px;
+    min-height: 280px;
+  }
+  .by-card h3 {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+}

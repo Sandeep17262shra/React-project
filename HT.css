@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  max-width: 100vw;
+  background-color: #ffffff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap");
+
+.ht-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  height: fit-content;
+  min-height: fit-content;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.ht-container h2 {
+  font-size: 1.5rem;
+}
+.ht-slide-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  min-height: fit-content;
+}
+.ht-card {
+  width: 270px;
+  min-width: 270;
+  max-width: 270px;
+  height: 420px;
+  max-height: 420px;
+  min-height: 420px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.ht-card img {
+  width: 270px;
+  min-width: 270;
+  max-width: 270px;
+  height: 270px;
+  max-height: 270px;
+  min-height: 270px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.ht-img-cont {
+  padding-top: 1rem;
+  width: 270px;
+  min-width: 270;
+  max-width: 270px;
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.ht-img-cont p {
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+.ht-img-name {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.ht-img-name img {
+  width: 30px;
+  height: 30px;
+  max-height: 30px;
+  min-height: 30px;
+}
+.ht-img-name div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.ht-img-name div h4 {
+  font-size: 0.7rem;
+  padding-left: 0.3rem;
+}
+.ht-img-name div img {
+  width: 70px;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+}
+@media screen and (max-width: 800px) {
+  .ht-card {
+    width: 200px;
+    min-width: 200;
+    max-width: 200px;
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .ht-card img {
+    width: 200px;
+    min-width: 200;
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .ht-img-cont {
+    padding-top: 1rem;
+    width: 200px;
+    min-width: 200;
+    max-width: 200px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+  .ht-img-name img {
+    width: 30px;
+    height: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+}

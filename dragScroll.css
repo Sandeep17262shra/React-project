@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  width: 100vw;
+  background-color: #ffffff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  background-color: #ffffff;
+  padding-top: 2rem;
+}
+
+.drag-scroll {
+  user-select: none;
+  scrollbar-width: none;
+  padding-right: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .drag-scroll {
+    user-select: none;
+    scrollbar-width: none;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.drag-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.dragging {
+  cursor: grabbing !important;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  background: white;
+  color: black;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 8px 12px;
+  z-index: 20;
+}
+
+.scroll-btn.left {
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.scroll-btn.right {
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+/* Progress Bar */
+.scroll-progress {
+  width: 90%;
+  height: 1px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.scroll-progress-inner {
+  height: 100%;
+  background: #3e3e3e;
+  transition: width 0.15s linear;
+}
+@media screen and (max-width: 800px) {
+  .scroll-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    z-index: 20;
+    display: none;
+  }
+
+  .scroll-btn.left {
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    display: none;
+  }
+
+  .scroll-btn.right {
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    display: none;
+  }
+
+  /* Progress Bar */
+  .scroll-progress {
+    width: 95%;
+    height: 1px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
+}
